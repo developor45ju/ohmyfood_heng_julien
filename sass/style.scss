@@ -7,7 +7,7 @@ $ternaire: #99E2D0;
 // Variables de résolutions
 
 $tablette: 720px;
-$destop: 1024px;
+$desktop: 1024px;
 
 // Variable texte
 
@@ -26,37 +26,45 @@ body {
     margin: 0;
     font-family: $police;
     max-width: 419px;
+
     #principal-entete {
         text-align: center;
+
         #logo-site {
             height: 70px;
             padding-top: 25px;
             box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2)
         }
+
         #localisation {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgba($color: #000000, $alpha: .1);
+
             .fa-solid.fa-location-dot {
                 position: absolute;
                 left: 130px;
             }
         }
+
         #principe-restaurant {
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: rgba($color: #000000, $alpha: .03);
             padding-bottom: 50px;
+
             h2 {
                 margin: 0;
                 padding-top: 30px;
                 width: 75%;
             }
+
             p {
                 width: 80%;
             }
+
             button {
                 box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: .5);
                 background: linear-gradient(172deg, $secondaire, $primaire);
@@ -69,11 +77,14 @@ body {
                 }
             }
         }
+
         #nav-fonctionnement {
+
             h2 {
                 text-align: start;
                 margin-left: 27px;
             }
+
             ul {
                 display: flex;
                 flex-direction: column;
@@ -81,6 +92,7 @@ body {
                 height: 200px;
                 padding: 0 25px 0 35px;
                 justify-content: space-between;
+
                 li {
                     display: flex;
                     align-items: center;
@@ -89,6 +101,7 @@ body {
                     height: 55px;
                     border-radius: 15px 15px;
                     padding-left: 20px;
+
                     .nombre-etape {
                         display: flex;
                         align-items: center;
@@ -102,12 +115,40 @@ body {
                         color: #FFF;
                         padding: 2px;
                         font-size: 14px;
+
                         i {
                             color: rgba(0, 0, 0, .5);
                             margin-right: 10px;
                         }
                     }
                 }
+            }
+        }
+    }
+
+    #principal-contenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+        background-color: rgba($color: #000000, $alpha: .3);
+        section {
+            width: 90%;
+            height: 500px;
+            border-radius: 25px;
+            box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .1);
+            background-color: #FFF;
+            img {
+                border-top-right-radius: inherit;
+                border-top-left-radius: inherit;
+                width: 100%;
+                height: 75%;
+                object-fit: cover;
+            }
+            .menu-nouveau {
+                position: absolute;
+                background-color: $ternaire;
+                left: 75%;
             }
         }
     }
