@@ -1,4 +1,4 @@
-@import "../utils/_mixins";
+@import "../utils/mixins";
 @import "../utils/varibles";
 
 .menu__card {
@@ -19,8 +19,9 @@
         padding: .3rem;
     }
 
-    &--img {
+    img {
         border-radius: 25px 25px 0 0;
     }
 
+    
 }
