@@ -6,8 +6,9 @@ button {
     color: #FFF;
     margin-top: 2rem;
     border-radius: 25px;
+    cursor: pointer;
     &:hover {
         box-shadow: 2px 2px 9px rgba($color: #000000, $alpha: .5);
-        background: linear-gradient(172, $secondaire 85%, $primaire);
+        background: linear-gradient(172deg, $secondaire 15%, $primaire);
     }
 }
