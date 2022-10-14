@@ -1,5 +1,5 @@
-@import "../utils/mixins";
-@import "../utils/varibles";
+@import "../utils/_mixins";
+@import "../utils/_variables";
 
 .menu__card {
     @include cards(360px, 95%, #FFF, 25px);
