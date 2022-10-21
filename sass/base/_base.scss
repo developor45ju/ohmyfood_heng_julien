@@ -1,6 +1,7 @@
 @import "../utils/_variables";
 @import "../utils/mixins";
 
+/* Mobile */
 @media (max-width: $tablette) {
     body {
         display: flex;
@@ -10,6 +11,7 @@
     }
 }
 
+/* Tablette */
 @media (min-width: $tablette) and (max-width: $desktop) {
     body {
         display: flex;
@@ -55,22 +57,22 @@
 
     .menu {        
         .menu__main {
-            div {
-                width: 100%;
+            div:first-child {
+                div {
+                    width: 100%;
+                }
+    
+                section {
+                    width: 45%;
+                }
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
 
-            section {
-                width: 45%;
-            }
-
-            button {
-                width: 100%;
-            }
-            
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
         }
+
     }
 }
 
@@ -113,21 +115,19 @@
 
     .menu {        
         .menu__main {
-            div {
-                width: 100%;
-            }
-
-            section {
-                width: 32%;
-            }
-
-            button {
-                width: 100%;
+            div:first-child {
+                div {
+                    width: 100%;
+                }
+    
+                section {
+                    width: 32%;
+                }
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
             
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
         }
     }
 }
