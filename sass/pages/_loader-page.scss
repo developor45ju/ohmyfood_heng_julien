@@ -1,38 +1,52 @@
 @import "../utils/_variables.scss";
 
 .loading-page {
-    display: flex;
-    align-self: center;
-
     position: absolute;
     top: 40vh;
-    transform: translateY(-50%);
-    z-index: 99999999;
 
+    display: flex;
+    align-self: center;
+    z-index: 99999999;
+    
     border: 15px solid #9E9E9E;
     border-radius: 50%;
+    border-top-color: $primaire;
+    border-right-color: $secondaire;
+    border-bottom-color: $ternaire;
+
     height: 150px;
     width: 150px;
+    
     animation: spin 2s ease forwards;
 }
 
 @keyframes spin {
     from {
-        transform: rotate(0turn);
-        border-top-color: $primaire;
-    }
-    to {
+        transform: rotate(0deg);
+    } to {
         transform: rotate(1turn);
-        visibility: hidden;
+        opacity: 0;
     }
 }
 
-body > .principal-entete, body > .principal-contenu, body > footer {
-    animation: body-visibility 2s ease forwards;
+.loading-page ~ * {
+    opacity: 0;
+    animation: body-visibility 2s 1s ease forwards;
 }
 
 @keyframes body-visibility {
-    from {
-        background-color: #9D9D9D;
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    overflow: hidden;
+    animation: scroll-page 2s 1s ease-in-out forwards;
+}
+
+@keyframes scroll-page {
+    to {
+        overflow: scroll;
     }
 }
