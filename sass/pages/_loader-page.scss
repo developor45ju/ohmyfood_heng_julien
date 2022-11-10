@@ -42,7 +42,7 @@
 
 body {
     overflow: hidden;
-    animation: scroll-page 2s 1s ease-in-out forwards;
+    animation: scroll-page 2s 1ms ease-in-out forwards;
 }
 
 @keyframes scroll-page {
