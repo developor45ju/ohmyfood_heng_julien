@@ -1,5 +1,5 @@
-
 @import "../components/_cards";
+@import "../utils/_variables";
 
 .principal-contenu {
     display: flex;
@@ -11,5 +11,44 @@
 
     h2 {
         width: 95%;
+    }
+}
+
+.fa-heart {
+    position: relative;
+    cursor: pointer;
+    font-size: x-large;
+    background: linear-gradient($secondaire, $primaire);
+    -webkit-background-clip: text;
+ 
+    color: transparent;
+    
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        content: '\f004';
+        font: var(--fa-font-solid);
+        
+        background: linear-gradient($secondaire, $primaire);
+        -webkit-background-clip: text;
+
+        height: 0;
+
+        transform-origin: bottom;
+        
+        color: transparent;
+
+        transition: all 1s 5ms ease-in;
+    }
+    
+    &:hover::after {
+        background: linear-gradient($secondaire, $primaire);
+        -webkit-background-clip: text;
+
+        height: 100%;        
+
+        color: transparent;
     }
 }
