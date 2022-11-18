@@ -53,11 +53,14 @@
                 
                 animation: show-in 2s 1s ease-in-out both;
 
-                > p {
+                > h2 {
                     width: 43px;
                     text-transform: uppercase;
                     border-bottom: 2px solid $ternaire;
                     padding-bottom: 2px;
+
+                    font-weight: 400;
+                    font-size: 18px;
                }
             }
             
