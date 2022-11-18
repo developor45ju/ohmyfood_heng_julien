@@ -19,7 +19,7 @@
     cursor: pointer;
     font-size: x-large;
     background: linear-gradient($secondaire, $primaire);
-    -webkit-background-clip: text;
+    background-clip: text;
  
     color: transparent;
     
@@ -32,11 +32,9 @@
         font: var(--fa-font-solid);
         
         background: linear-gradient($secondaire, $primaire);
-        -webkit-background-clip: text;
+        background-clip: text;
 
         height: 0;
-
-        transform-origin: bottom;
         
         color: transparent;
 
@@ -45,7 +43,7 @@
     
     &:hover::after {
         background: linear-gradient($secondaire, $primaire);
-        -webkit-background-clip: text;
+        background-clip: text;
 
         height: 100%;        
 
