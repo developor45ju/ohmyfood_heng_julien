@@ -10,11 +10,12 @@ footer {
     }
 
     menu {
-        padding: 0  ;
+        padding: 0;
     }
 
     menu li {
         list-style-type: none;
+        margin: 5px 0;
         i {
             margin-right: 10px;
             height: 20px;
@@ -23,7 +24,6 @@ footer {
 
         a {
             color: #FFF;
-            margin: 3px 0;
             text-decoration: none;
         }
     }

@@ -112,7 +112,7 @@
                     
                     width: min-content;
 
-                    margin-right: -70px;
+                    margin-right: -8vw;
 
                     p {
                         font-weight: bold;
@@ -149,7 +149,7 @@
                         width: 40px;
 
                         font-weight: bold;
-                        font-size: 36px;
+                        font-size: 20px;
 
                         border-radius: 50%;
                         background-color: #FFF;
@@ -173,7 +173,7 @@
     }
 }
 
-@for $i from 1 to 5 {
+@for $i from 1 to 6 {
     .menu .menu__main div:first-child section article:nth-child(#{$i}) {
         animation: slideright 2s ease-in-out forwards;
         animation-delay: #{$i/10}s;
