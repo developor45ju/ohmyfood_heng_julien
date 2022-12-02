@@ -9,6 +9,12 @@
         justify-content: center;
         margin: 0;
         width: 100%;
+
+        .principal-entete {
+            ul {
+                height: 210px;
+            }
+        }
     }
 }
 
@@ -28,6 +34,7 @@
                 }
     
                 ul {
+                    height: 200px;
                     flex-direction: row;
                     flex-wrap: wrap;
         
@@ -95,7 +102,6 @@
                 }
     
                 ul {
-                    height: auto;
                     flex-direction: row;
         
                     li {
