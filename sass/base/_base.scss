@@ -1,129 +1,151 @@
 @import "../utils/_variables";
-@import "../utils/mixins";
-
-/* Mobile */
-@media (max-width: $tablette) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        width: 100%;
-
-        .principal-entete {
-            ul {
-                height: 210px;
-            }
-        }
-    }
-}
 
 /* Tablette */
 @media (min-width: $tablette) and (max-width: $desktop) {
     body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        
-        .principal-entete {
+        .principal-contenu {
             .nav-fonctionnement {
                 h2 {
                     text-align: center;
+                    width: 100%;
                     margin-left: 0;
                 }
-    
-                ul {
-                    height: 200px;
-                    flex-direction: row;
-                    flex-wrap: wrap;
         
-                    li:first-child, li:nth-child(2) {
-                        width: 45%;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        width: 30%;
+                        padding-left: 40px;
+                        font-size: 14px;
                     }
-
-                    li:last-child {
-                        margin-left: auto;
-                        margin-right: auto;
-                        width: 50%;
-                    }
-                }
+                }   
             }
-        }
-
-        .principal-contenu {
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-
-            .menu__card {
-                @include cards(360px, 45%, #FFF, 25px);
-            }
-        }
-
-    }
-
-    .menu {        
-        .menu__main {
-            div:first-child {
-                div {
-                    width: 100%;
-                }
-    
-                section {
-                    width: 45%;
-                }
-                
+        
+            .section-restaurants {
                 display: flex;
+                flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                align-content: space-around;
+                justify-content: space-between;
+                height: 600px;
+                padding: 30px 2%;
+                
+                h2 {
+                    display: block;
+                    width: 100%;
+                    margin: 5px 0;
+                    text-align: center;
+                }
+        
+                .menu__card {
+                    margin: 0;
+                    width: 49%;
+                }
             }
-
         }
 
+        .menu__main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            div {
+                width: 100%;
+            }
+            
+            section {
+                width: 45%;
+            }
+            
+            section:last-child {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        
+        footer {
+            padding: 1em 2em 2em 2em;
+        
+            h3 {
+                text-align: center;
+            }
+        
+            menu {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
 }
 
 /* Ordinateur */
 
 @media (min-width: $desktop) {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
+    body  {
 
-        .principal-entete {
+        .principal-contenu {
             .nav-fonctionnement {
-
+                
                 h2 {
+                    width: 100%;
                     text-align: center;
                     margin-left: 0;
                 }
-    
+                
                 ul {
+                    display: flex;
                     flex-direction: row;
-        
+                    
                     li {
-                        width: 25%;
+                        display: flex;
+                        justify-content: center;
+                        width: 32%;
+                        padding: 0;
                     }
                 }
             }
-
-        }
         
-        .principal-contenu {
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-
-            .menu__card {
-                @include cards(360px, 20%, #FFF, 25px);
+            .section-restaurants {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 40px 2%;
+            
+                h2 {
+                    display: block;
+                    width: 100%;
+                    margin: 5px 0;
+                    text-align: center;
+                }
+            
+                .menu__card {
+                    margin: 0;
+                    width: 20%;
+                }
             }
         }
 
+        .menu__main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        
+            div {
+                width: 100%;
+            }
+            
+            section {
+                width: 32%;
+            }
+        }
+        
         footer {
-            padding: 1em 0 2em 0;
+            padding: 1em 2em 2em 2em;
         
             h3  {
                 text-align: center;
@@ -131,27 +153,8 @@
         
             menu {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
             }
         }
     }
-
-    .menu {        
-        .menu__main {
-            div:first-child {
-                div {
-                    width: 100%;
-                }
-    
-                section {
-                    width: 32%;
-                }
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-            
-        }
-    }
-
 }

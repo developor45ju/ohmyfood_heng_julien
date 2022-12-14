@@ -1,52 +1,35 @@
-@import "../components/_cards";
 @import "../utils/_variables";
-
-.principal-contenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba($color: #000000, $alpha: .1);
-    gap: 10px;
-    padding: 2rem 0;
-
-    h2 {
-        width: 95%;
-    }
-}
 
 .fa-heart {
     position: relative;
     cursor: pointer;
-    font-size: x-large;
-    background: linear-gradient($secondaire, $primaire);
+    transform: scale(1.2, 1.5);
     background-clip: text;
- 
-    color: transparent;
+    
+    &:hover {
+        background: linear-gradient(45deg, $primaire, $secondaire);
+        background-clip: text;
+        color: transparent;
+    }
     
     &::after {
+        content: '\f004';
         position: absolute;
+        z-index: -1;
+        height: 0%;
         top: 0;
         left: 0;
-
-        content: '\f004';
-        font: var(--fa-font-solid);
-        
-        background: linear-gradient($secondaire, $primaire);
-        background-clip: text;
-
-        height: 0;
-        
+        transition: height 1s ease;
         color: transparent;
-
-        transition: all 1s 5ms ease-in;
     }
     
     &:hover::after {
-        background: linear-gradient($secondaire, $primaire);
+        content: '\f004';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: linear-gradient(45deg, $primaire, $secondaire);
         background-clip: text;
-
-        height: 100%;        
-
-        color: transparent;
     }
 }

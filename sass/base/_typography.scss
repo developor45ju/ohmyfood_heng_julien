@@ -1,15 +1,124 @@
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-size: 22px;
     font-weight: bold;
-    font-size: 125%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+li {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.localisation {
+    input[value] {
+        font-weight: 600;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+}
+
+.fa-heart:hover::after {
+    font-weight: 900;
+}
+
+.principe-restaurant {
+    h1 {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    p {
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+}
+
+.button {
+    font-weight: 500;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.menu__card--new {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu__main h2 {
+    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.menu__main section h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.menu__main article div:first-child h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu__main article div:first-child p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.menu__main article div:nth-child(2) p {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 footer {
     h3 {
         font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    menu li {
+        font-size: 16px;
+        font-weight: 500;
     }
 }
  
-p {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
