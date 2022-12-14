@@ -3,7 +3,6 @@
 ## Sommaire:
 1. [Présentation](#presentation)
 2. [Technologies](#technologies)
-3. [Cheminement](#cheminement)
 ## Presentation
 Ce projet consiste à créer un site web statique d'une entreprise fictive qui s'est installé à Paris et qui propose des menu à emporter. Basé à New-Yok, cette entreprise vise le luxe gastronomique en proposant aux moyennes et hautes classe de la société.
 ## Technologies
